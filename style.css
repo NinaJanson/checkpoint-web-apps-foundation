@@ -80,6 +80,7 @@ h1 {
   padding: 0;
   margin: 0.5rem;
 }
+
 .valid:after {
   content: " ✅";
 }

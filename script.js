@@ -4,7 +4,7 @@ const password2 = document.querySelector("#pwd2");
 const allRequirements = document.querySelectorAll("p");
 const main = document.querySelector("main");
 
-const PwdEqual = document.querySelector("#passwords-equal");
+const pwdEqual = document.querySelector("#passwords-equal");
 const lowerCaseChar = document.querySelector("#has-lower-case-char");
 const upperCaseChar = document.querySelector("#has-upper-case-char");
 const hasNum = document.querySelector("#has-number");
@@ -24,7 +24,7 @@ button.addEventListener("click", function () {
 
 function checkPasswordValidation() {
   if (password1.value === password2.value && password1.value !== "") {
-    PwdEqual.classList.replace("invalid", "valid");
+    pwdEqual.classList.replace("invalid", "valid");
 
     if (password1.value.toUpperCase() !== password1.value) {
       lowerCaseChar.classList.replace("invalid", "valid");
